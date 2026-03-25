@@ -728,7 +728,9 @@ function renderCard(card) {
   });
 
   document.getElementById('moxfield-link').href =
-    MOXFIELD_URL + encodeURIComponent('"' + card.name + '"');
+  'https://www.moxfield.com/search?q=' +
+  encodeURIComponent('commander:' + card.name) +
+  '&fmt=commander';
 
   document.getElementById('card-stage').classList.add('show');
 }
