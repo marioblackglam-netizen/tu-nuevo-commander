@@ -728,7 +728,9 @@ function renderCard(card) {
   });
 
   document.getElementById('moxfield-link').href =
-  MOXFIELD_URL + encodeURIComponent('"' + card.name + '"');
+    MOXFIELD_URL + encodeURIComponent('"' + card.name + '"');
+
+  document.getElementById('card-stage').classList.add('show');
 }
 
 /* ── RECOMMENDATIONS ──────────────────────────────────── */
